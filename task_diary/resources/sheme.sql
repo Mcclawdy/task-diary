@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS dairy (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT NOT NULL,
+        planned TIMESTAMP NOT NULL,
+        description TEXT NOT NULL DEFAULT "",
+        done BOOLEAN NOT NULL DEFAULT 0,
+        created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
